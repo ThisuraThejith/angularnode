@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        {{myName}}
+        {{itsName}}
+        <h1>Departments</h1>
+        <ol>
+            <li ng-repeat="department in departments">
+                {{department.name}}
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
